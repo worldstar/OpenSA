@@ -1,0 +1,17 @@
+[PropertyInfo]
+alpha,double,false,false, , ,false,<default>
+chromosome1,chromosome,false,false, , ,false,<default>
+currentTemperature,double,false,false, , ,false,<default>
+finalTemperature,double,false,false, , ,false,<default>
+initialTemperature,double,false,false, , ,false,<default>
+moves,MoveI[],false,false, , ,false,<default>
+numberOfDepartments,int,false,false, , ,false,<default>
+numberOfMoves,int,false,false, , ,false,<default>
+ObjectiveFunction1,QAPObjectiveFunctionI[],false,false, , ,false,<default>
+SAMain,MainI,false,false, , ,false,<default>
+Selection,SelectI,false,false, , ,false,<default>
+[IconNames]
+
+
+
+
