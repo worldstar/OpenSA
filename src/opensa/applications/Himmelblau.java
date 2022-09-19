@@ -87,6 +87,7 @@ public class Himmelblau {
         //to receive result in string type.
         String implementResult = factors+"\t"+SAMain.getBestSolution().toString2() +"\t"+SAMain.getBestObjectiveValue()[0]+"\n";
         writeFile("Continuous", implementResult);
+        System.out.print(implementResult);
   }
 
   public static void main(String[] args) {
@@ -95,7 +96,7 @@ public class Himmelblau {
     int numberOfMoves = 1000;
     int seed[] = new int[10];
     alpha = new double[]{0.9, 0.8, 0.7};
-    initialTemperature = new double[]{1000, 2000, 3000};
+    initialTemperature = new double[]{1000};
     finalTemperature   = new double[]{10, 100, 500};
 
     java.util.Random r = new java.util.Random(1100);
@@ -110,7 +111,7 @@ public class Himmelblau {
     for(int i = 0 ; i < alpha.length ; i ++ ){
       for(int j = 0 ; j < finalTemperature.length ; j ++ ){
         for(int k = 0 ; k < seed.length ; k ++ ){
-          System.out.println("The "+(i+1)+" implement and finalTemperature "+(j+1)+"\tcounter: "+counter);
+          //System.out.println("The "+(counter+1)+" implement and iniTemperature: "+(initialTemperature[0])+" and finalTemperature "+finalTemperature[j]);
           Himmelblau1.setParameter(alpha[i], finalTemperature[j], numberOfMoves, seed[k], initialTemperature[0]);//, int , double ){
           Himmelblau1.initialObjects();
           Himmelblau1.startSA();
